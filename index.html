@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sentient 2048 Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Sentient Logo" />
+    <h1>Sentient 2048 Game</h1>
+  </header>
+
+  <div class="game-container">
+    <div class="top-bar">
+      <div class="scores">
+        <div class="score-box">Score <span id="score">0</span></div>
+        <div class="score-box">Best <span id="best">0</span></div>
+      </div>
+      <button onclick="newGame()">New Game</button>
+    </div>
+
+    <div class="grid" id="grid"></div>
+  </div>
+
+  <footer>
+    <p>made by <a href="https://x.com/sonuwork37" target="_blank">@sonuwork37</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
