@@ -1,6 +1,6 @@
 # 🎯 Sentient 2048 Game
 
-A modern, minimal, and mobile-friendly version of the **2048 puzzle game**, made with pure **HTML, CSS, and JavaScript** — no libraries required.
+A modern, minimal, and mobile-friendly version of the **2048 puzzle game**, made with pure **HTML, CSS, and JavaScript** 
 
 ![Preview](./images/preview.png)
 
@@ -8,7 +8,7 @@ A modern, minimal, and mobile-friendly version of the **2048 puzzle game**, made
 
 ## 🧠 About the Game
 Sentient 2048 is a fun and elegant take on the classic 2048 game.  
-You combine tiles with the same numbers to reach the **2048 tile** — or keep going for a higher score!
+You combine tiles with the same numbers to reach the **2048 tile** or keep going for a higher score!
 
 - Smooth swipe + keyboard controls  
 - Dynamic score tracking with local storage  
