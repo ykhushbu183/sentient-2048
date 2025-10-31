@@ -2,7 +2,7 @@
 
 A modern, minimal, and mobile-friendly version of the **2048 puzzle game**, made with pure **HTML, CSS, and JavaScript** — no libraries required.
 
-![Preview](./preview.png)
+![Preview](./images/preview.png)
 
 ---
 
