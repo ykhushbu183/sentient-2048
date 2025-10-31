@@ -88,9 +88,7 @@ function handleMove(direction) {
     drawBoard();
     updateScore();
 
-    if (checkGameOver()) {
-      showPopup("No Moves Left!");
-    }
+    if (checkGameOver()) showPopup();
   }
 }
 
@@ -119,15 +117,19 @@ function checkGameOver() {
 }
 
 // === POPUP ===
-function showPopup(message) {
-  const popup = document.getElementById("popup");
-  popup.querySelector("p").textContent = message;
-  popup.classList.add("show");
+function showPopup() {
+  const overlay = document.getElementById("popup-overlay");
+  overlay.style.display = "flex";
 }
 
 function hidePopup() {
-  const popup = document.getElementById("popup");
-  popup.classList.remove("show");
+  const overlay = document.getElementById("popup-overlay");
+  overlay.style.display = "none";
+}
+
+function closePopupAndRestart() {
+  hidePopup();
+  newGame();
 }
 
 window.addEventListener("keydown", (e) => {
