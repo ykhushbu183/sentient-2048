@@ -11,6 +11,7 @@ function initBoard() {
   addNumber();
   drawBoard();
   updateScore();
+  hidePopup();
 }
 
 function drawBoard() {
@@ -55,11 +56,11 @@ function slide(row) {
   return row;
 }
 
-function rotateBoard() {
+function rotateBoard(b = board) {
   let newBoard = Array.from({ length: size }, () => Array(size).fill(0));
   for (let r = 0; r < size; r++) {
     for (let c = 0; c < size; c++) {
-      newBoard[r][c] = board[c][r];
+      newBoard[r][c] = b[c][r];
     }
   }
   return newBoard;
@@ -86,6 +87,10 @@ function handleMove(direction) {
     addNumber();
     drawBoard();
     updateScore();
+
+    if (checkGameOver()) {
+      showPopup("No Moves Left!");
+    }
   }
 }
 
@@ -100,6 +105,29 @@ function updateScore() {
 
 function newGame() {
   initBoard();
+}
+
+function checkGameOver() {
+  for (let r = 0; r < size; r++) {
+    for (let c = 0; c < size; c++) {
+      if (board[r][c] === 0) return false;
+      if (r < size - 1 && board[r][c] === board[r + 1][c]) return false;
+      if (c < size - 1 && board[r][c] === board[r][c + 1]) return false;
+    }
+  }
+  return true;
+}
+
+// === POPUP ===
+function showPopup(message) {
+  const popup = document.getElementById("popup");
+  popup.querySelector("p").textContent = message;
+  popup.classList.add("show");
+}
+
+function hidePopup() {
+  const popup = document.getElementById("popup");
+  popup.classList.remove("show");
 }
 
 window.addEventListener("keydown", (e) => {
