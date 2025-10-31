@@ -41,6 +41,7 @@ You combine tiles with the same numbers to reach the **2048 tile** or keep going
 
 ## 🧑‍💻 Developer
 
-Made by @0x_sewashi
+**Made by [@0x_sewashi](https://x.com/0x_sewashi)**  
 
 Built with ❤️ using HTML, CSS, and JavaScript.
+
