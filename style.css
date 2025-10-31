@@ -129,21 +129,18 @@ button:hover {
 
 /* ✅ Clean footer text */
 footer {
-  margin-top: 15px;
+  margin-top: 20px;
   text-align: center;
   font-size: 14px;
-  color: #444;
-  font-family: "Poppins", sans-serif;
+  color: #555;
 }
 
 footer a {
-  color: #22c55e;
+  color: #ff69b4;
   text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s;
+  font-weight: bold;
 }
 
 footer a:hover {
-  color: #16a34a;
   text-decoration: underline;
 }
