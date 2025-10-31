@@ -127,7 +127,6 @@ button:hover {
 .cell[data-value="1024"] { background: #99004d; color: #fff; font-size: 14px; }
 .cell[data-value="2048"] { background: #660033; color: #fff; font-size: 14px; }
 
-/* ✅ Clean footer text */
 footer {
   margin-top: 20px;
   text-align: center;
@@ -145,20 +144,20 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* 🌸 Popup Overlay (Game Over Message) */
+/* 🌸 Popup Overlay */
 .popup-overlay {
   position: fixed;
   top: 0; left: 0;
   width: 100%; height: 100%;
   background: rgba(255, 182, 193, 0.5);
   backdrop-filter: blur(5px);
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   z-index: 99;
 }
 
-.popup {
+.popup-box {
   background: #fff0f5;
   border: 2px solid #ff80b5;
   border-radius: 20px;
@@ -169,18 +168,18 @@ footer a:hover {
   animation: popupFade 0.3s ease;
 }
 
-.popup h2 {
+.popup-box h2 {
   font-size: 1.6rem;
   margin-bottom: 10px;
 }
 
-.popup p {
+.popup-box p {
   font-size: 14px;
   margin-bottom: 20px;
   color: #555;
 }
 
-.popup button {
+.popup-box button {
   background: #ff69b4;
   border: none;
   color: white;
@@ -191,7 +190,7 @@ footer a:hover {
   transition: background 0.2s;
 }
 
-.popup button:hover {
+.popup-box button:hover {
   background: #ff3699;
 }
 
