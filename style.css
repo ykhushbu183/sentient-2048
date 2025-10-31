@@ -127,26 +127,23 @@ button:hover {
 .cell[data-value="1024"] { background: #99004d; color: #fff; font-size: 14px; }
 .cell[data-value="2048"] { background: #660033; color: #fff; font-size: 14px; }
 
+/* ✅ Clean footer text */
 footer {
   margin-top: 15px;
   text-align: center;
+  font-size: 14px;
+  color: #444;
+  font-family: "Poppins", sans-serif;
 }
 
 footer a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid #22c55e;
   color: #22c55e;
-  font-size: 20px;
   text-decoration: none;
-  transition: all 0.3s;
+  font-weight: 600;
+  transition: color 0.3s;
 }
 
 footer a:hover {
-  background: #22c55e;
-  color: black;
+  color: #16a34a;
+  text-decoration: underline;
 }
